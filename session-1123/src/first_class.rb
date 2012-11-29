@@ -14,3 +14,8 @@ def all_above_10? nums
   return false if nums.empty?
   nums.all?{|x| x > 10}
 end
+
+
+def reduce_test(array)
+  array.reduce(''){|sum, row| sum + row.reduce('') { |cellSum, cell| cellSum + cell } + '\r\n' }
+end

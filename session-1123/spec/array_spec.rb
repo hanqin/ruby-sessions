@@ -11,4 +11,6 @@ describe "Array operation in first class" do
   specify { all_above_10?([12]).should be_true }
   specify { all_above_10?([11,12,10]).should be_false }
   specify { all_above_10?([]).should be_false }
+  specify { reduce_test([['o']]).should =='o\r\n'}
+  #specify { reduce_test([['o']]).should =='o\r\n'}
 end
