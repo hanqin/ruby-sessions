@@ -23,7 +23,7 @@ class Game
       return Game.new @matrix
     end
 
-    Game.new next_tick_matrix()
+    Game.new next_tick_matrix
   end
 
   def next_tick_matrix
